@@ -2,7 +2,7 @@
 
 DROP PROCEDURE IF EXISTS ComputeAverageWeightedScoreForUsers;
 DELIMITER $$
-CREATE PROCEDURE ComputeAverageWeightedScoreForUsers(IN USR_ID INT)
+CREATE PROCEDURE ComputeAverageWeightedScoreForUsers()
 BEGIN
     UPDATE users
     SET average_score = (
