@@ -44,9 +44,3 @@ INSERT INTO corrections (user_id, project_id, score) VALUES (@user_bob, @project
 
 INSERT INTO corrections (user_id, project_id, score) VALUES (@user_jeanne, @project_c, 91);
 INSERT INTO corrections (user_id, project_id, score) VALUES (@user_jeanne, @project_py, 73);
-
--- select user_id, sum(score)as sum, count(score) as count, sum(score) / count(*) as avg
--- from corrections
--- where user_id = 2
--- group by user_id;
--- HAVING user_id = 2;
