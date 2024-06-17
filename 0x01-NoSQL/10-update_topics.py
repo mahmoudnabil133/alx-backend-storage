@@ -5,5 +5,9 @@ update documents in a collection
 
 
 def update_topics(mongo_collection, name, topics):
-    "update doc"
+    """
+    update documents
+    in mongo documents
+    return None
+    """
     mongo_collection.update_one({name: name}, {$set: {"topics": topics}})
