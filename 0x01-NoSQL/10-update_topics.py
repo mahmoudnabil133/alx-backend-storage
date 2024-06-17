@@ -1,14 +1,17 @@
 #!/usr/bin/env python3
 """
-update documents in a collection
-update update
+Change school topics
 """
 
 
 def update_topics(mongo_collection, name, topics):
     """
-    update documents
-    in mongo documents
-    return None
+    changes all topics of a school
+     document based on the name
+
+    :param mongo_collection:
+    :param name:
+    :param topics:
+    :return:
     """
-    mongo_collection.update_many({name: name}, {$set: {"topics": topics}})
+    mongo_collection.update_many({"name": name}, {"$set": {"topics": topics}})
